@@ -1,0 +1,6 @@
+<div style="width: 300px;">
+    <button (click)="this.gototHome()">Home</button>
+    <button *ngIf="!isLoggedIn" (click)="this.gotoLogin()">Login</button>
+    <button *ngIf="isLoggedIn" (click)="this.logout()">Logout</button>
+    <button *ngIf="isLoggedIn" (click)="this.gotoAdd()">Add Stock</button>    
+</div>

@@ -1,0 +1,24 @@
+<div class="contianer">
+    <div id="images">
+        <div>
+            <img src="{{ this.stock.images[0].data }}" alt="" id="image-1">
+        </div>
+        <div>
+            <img src="{{ this.stock.images[1].data }}" alt="" id="image-2">
+            <img src="{{ this.stock.images[2].data }}" alt="" id="image-3">
+        </div>
+    </div>
+    <div id="car-info">
+        <div><span id="car-title">{{ this.stock.make }}</span> <span id="car-price">R{{ this.stock.retailPrice.toFixed(2) }}</span></div>
+        <div class="car-details">
+            <ul>
+                <li id="model">{{ this.stock.model }}</li>
+                <li id="model-year">{{ this.stock.modelYear }}</li>
+                <li id="kms">{{ this.stock.kms }}</li>
+            </ul>
+        </div>
+        <div class="car-button">
+            <button (click)="this.gotoDetailsPage()">View Car</button>
+        </div>
+    </div>
+</div>

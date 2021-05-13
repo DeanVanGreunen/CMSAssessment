@@ -1,0 +1,124 @@
+.outer {
+    transform: translateY(126px);
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 300px);
+    width: calc(100% - 200px);
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    background:#4a86e8;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-input {
+    display: block;
+    padding: 8px 0px;
+}
+
+.form-input input {
+    display:block;
+    width: calc(100% - 32px);
+    padding: 12px;
+    border:none;
+    border-radius: 4px;
+}
+
+
+.form-input input[type=file] {
+    display:block;
+    color:#FFF;
+}
+
+div.col-container {
+    display: block;
+}
+div.col-container .col {
+    display: inline-block !important;
+    vertical-align: top;
+}
+
+button.createbutton {
+    display: block;
+    background:#FFFFFF;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 20px 12px;
+    width: 342px;
+    margin:24px auto;
+    color: #4a86e8;
+    cursor: pointer;
+}
+
+
+button.createbutton:hover {
+    background:#2e2e2e;
+    border: 1px solid #2e2e2e;
+    color: #eeeeee;
+}
+
+div#accessory-container {
+    display: block;
+    padding-top:12px;
+    overflow-y: scroll;
+    height: 328px;
+    padding-left: 12px;
+}
+
+
+div#accessory-container div {
+    color: #FFF;
+}
+
+div#accessory-container span {
+    color: #FFF;
+}
+
+div#accessory-input {
+    display: block;
+    color: #FFF;
+    position: relative;  
+}
+
+div#accessory-input div input {
+    display:block;
+    width: 290px;
+    padding: 12px;
+    border:none;
+    border-radius: 4px;
+    margin: 4px 0px;
+}
+
+button#addAccessory {
+    display: inline-block;
+    background:#FFFFFF;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: calc(100% - 72px);
+    color: #4a86e8;
+    cursor: pointer;
+}
+
+button#clearAccessory {
+    margin-left: 4px;
+    display: inline-block;
+    background:#FFFFFF;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 64px;
+    color: #e84a4a;
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+.container { 
+    padding: 0px 12px;
+}
+
+.image-container {
+    display: block;
+}
+
+.large-image {
+    display: block;
+}
+
+
+.large-image img {
+    width: 250px;
+    height: 250px;
+    margin:4px;
+}
+
+img[src=""],
+img:not([src]){
+  opacity: 0;
+}
+
+
+.car-details { 
+    display: block;
+    margin-top:32px;
+}
+
+.car-details table { 
+    display: block;
+}
+.car-details table tr th { 
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 12pt;
+}
+
+div.car-accessories {
+    display: block;
+    margin-top:32px;
+}
+
+div.car-accessories div {
+    display: block;
+}
+
+
+div.car-accessories div span strong {
+    width: 200px;
+    display: inline-block;
+}
+
+
+.edit-button {
+    margin-top: 32px;
+    display: block;
+    background:#4a86e8;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

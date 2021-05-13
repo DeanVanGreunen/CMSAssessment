@@ -1,0 +1,72 @@
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    background:#FFFFFF;
+    padding: 12px;
+    border-radius: 8px;
+}
+.form {
+    display: block;
+    padding: 12px 24px;
+}
+
+.form h4 {
+    text-align: center;
+    margin:0 auto;
+    font-size: 22pt;
+}
+
+span#error {
+    color:red;
+    display: block;
+    text-align: center;
+}
+
+a#registerLink {
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    text-decoration: none;
+    color:#4a86e8;
+}
+
+.form input[type="text"], .form input[type="password"] {
+    display: block;
+    background:#f9f9f9;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 20px 12px;
+    width: 320px;
+    margin:24px auto;
+}
+
+.form input[type="text"]::placeholder, .form input[type="password"]::placeholder {
+    color:#a5a5a5;
+}
+
+.form input[type="button"] {
+    display: block;
+    background:#4a86e8;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 20px 12px;
+    width: 342px;
+    margin:24px auto;
+    color: #FFFFFF;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="pagination">
+    <app-pagination [page_number]="page_number" [total_pages]="total_pages"></app-pagination>
+</div>
+<div class="car-list">
+    <app-stock
+        *ngFor="let stock of stocks; let i = index;"
+        [stock]="stock"
+    ></app-stock>
+    <span style="padding-left:32px;font-weight: bold;" *ngIf="stocks.length == 0">No Stocks on system</span>
+</div>

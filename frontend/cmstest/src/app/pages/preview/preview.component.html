@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h4><span style="font-weight: normal;width: 250px;display: inline-block;">{{ stock.make }} {{ stock.model }}</span>&nbsp;&nbsp;<span>R{{ (stock.retailPrice/100).toFixed(2) }}</span></h4>
+    <div class="image-container">
+        <div class="large-image">
+            <img src="{{ stock.images[0].data }}" alt="">
+            <img src="{{ stock.images[1].data }}" alt="">
+            <img src="{{ stock.images[2].data }}" alt="">            
+        </div>
+    </div>
+    <div class="car-details">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Mileage</th>
+                    <td>{{ stock.kms }} Km</td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td>{{ stock.modelYear }}</td>
+                </tr>
+                <tr>
+                    <th>Colour</th>
+                    <td>{{ stock.colour }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="car-accessories">
+        <div *ngFor="let accessory of stock.accessories; let j = index;">
+            <span><strong>{{ accessory.name }}</strong>&nbsp;{{ accessory.description }}</span>
+        </div>
+    </div>
+    <div>
+        <button *ngIf="isLoggedIn" class="edit-button" (click)="this.gotoEdit()">Edit Stock</button>
+        <button *ngIf="isLoggedIn" class="edit-button" (click)="this.delete()">Delete Stock</button>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+div.contianer {
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+div#images {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#image-1 {
+    width:200px;
+    height:150px;
+}
+
+#image-2, #image-3 {
+    width: 98px;
+    height: 72px;
+}
+
+#image-2 {
+    margin-right: 4px;
+}
+
+img[src=""],
+img:not([src]){
+  opacity: 0;
+}
+
+
+div#car-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 12px;
+}
+
+span#car-title {
+    display: inline-block;
+    color:#4a86e8;
+    width: 125px;
+}
+span#car-price {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    width: 72px;
+}
+
+div.car-details {
+    display: block;
+}
+
+div.car-details ul {
+    list-style: none;
+    padding: 0px;
+    margin:0px;
+    margin-top: 12px;
+}
+
+div.car-details ul li {
+    padding:4px 0px;
+}
+
+div.car-button {
+    display: block;
+}
+
+
+div.car-button button {
+    display: block;
+    background:#4a86e8;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color:#FFF;
+    transform: translateY(84px) translateX(116px);
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+
+<div class="outer">
+    <div class="middle">
+        <div class="container">
+            <div class="col-container">
+                <div class="col">
+                    <span style="color:#FFF;">Create New Stock</span>
+                    <div class="form-input">
+                        <input type="text" placeholder="Registrtion Number" id="RegNumber">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Make" id="Make">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Model" id="Model">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Model Year" id="ModelYear">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Mileage in KMs" id="KMS">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Colour" id="Colour">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="VIN" id="VIN">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Retail Price" id="RetailPrice">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Cost Price" id="CostPrice">
+                    </div>
+                    <div class="form-input">
+                        <span style="color:#FFF;">Images</span>
+                        <input type="file" id="image-1" accept=".jpg, .png">
+                        <input type="file" id="image-2" accept=".jpg, .png">
+                        <input type="file" id="image-3" accept=".jpg, .png">
+                    </div>
+                </div>
+                <div class="col">
+                    <span style="color:#FFF;">Accessories</span>
+                    <div id="accessory-container">
+                        
+                    </div>
+                    <div id="accessory-input">
+                        <span>Add Accessory</span>
+                        <div>
+                            <input type="text"placeholder="Name" id="newName">
+                            <input type="text"placeholder="Description" id="newDescription">
+                            <div>
+                                <button id="addAccessory" (click)="this.addAccessory()">Add</button>
+                                <button id="clearAccessory" (click)="this.clearAccessory()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="createbutton" (click)="this.create()">Create</button>
+        </div>
+    </div>
+</div>

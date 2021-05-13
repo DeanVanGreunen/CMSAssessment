@@ -1,0 +1,11 @@
+<div class="contianer">
+    <div class="counter">
+        <span id="current_page">{{ this.page_number }}</span>
+        <span> of </span>
+        <span id="total_pages">{{ this.total_pages }}</span>
+    </div>
+    <div class="buttons">
+        <div *ngFor="let pageNumber of pages; let i = index;"
+        (click)="this.gotoPage(pageNumber)">{{ pageNumber }}</div>
+    </div>
+</div>

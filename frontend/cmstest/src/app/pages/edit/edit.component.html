@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+
+<div class="outer">
+    <div class="middle">
+        <div class="container">
+            <div class="col-container">
+                <div class="col">
+                    <span style="color:#FFF;">Update Stock</span>
+                    <div class="form-input">
+                        <input type="text" placeholder="Registrtion Number" id="RegNumber" [value]="stock.regNumber">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Make" id="Make" [value]="stock.make">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Model" id="Model" [value]="stock.model">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Model Year" id="ModelYear" [value]="stock.modelYear">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Mileage in KMs" id="KMS" [value]="stock.kms">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Colour" id="Colour" [value]="stock.colour">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="VIN" id="VIN" [value]="stock.vin">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Retail Price" id="RetailPrice" [value]="stock.retailPrice">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Cost Price" id="CostPrice" [value]="stock.costPrice">
+                    </div>
+                    <div class="form-input">
+                        <span style="color:#FFF;">Images</span>
+                        <input type="file" id="image-1" accept=".jpg, .png">
+                        <input type="file" id="image-2" accept=".jpg, .png">
+                        <input type="file" id="image-3" accept=".jpg, .png">
+                        <span style="color:#FFF;font-weight: bold;padding:12px;">Existing Images</span>
+                        <div class="update-image-preview">
+                            <img [src]="this.stock.images[0].data" alt="" [attr.data-name]="this.stock.images[0].name" id="image-1src">
+                            <img [src]="this.stock.images[1].data" alt="" [attr.data-name]="this.stock.images[1].name" id="image-2src">
+                            <img [src]="this.stock.images[2].data" alt="" [attr.data-name]="this.stock.images[2].name" id="image-3src">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <span style="color:#FFF;">Accessories</span>
+                    <div id="accessory-container">
+                        <div *ngFor="let accessory of stock.accessories; let i = index;">
+                            <span style="color:#FFF;font-weight: bold;"> {{ accessory.name }}:</span>&nbsp;<span style="color:#FFF;">"{{ accessory.description }}</span>
+                        </div>
+                    </div>
+                    <div id="accessory-input">
+                        <span>Add Accessory</span>
+                        <div>
+                            <input type="text"placeholder="Name" id="newName">
+                            <input type="text"placeholder="Description" id="newDescription">
+                            <div>
+                                <button id="addAccessory" (click)="this.addAccessory()">Add</button>
+                                <button id="clearAccessory" (click)="this.clearAccessory()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="createbutton" (click)="this.update()">Update</button>
+        </div>
+    </div>
+</div>

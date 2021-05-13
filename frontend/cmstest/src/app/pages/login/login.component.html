@@ -1,0 +1,21 @@
+
+<div class="outer">
+    <div class="middle">
+        <div class="container">
+            <div class="form">
+                <h4>Login</h4>
+                <div class="login-form-input">
+                    <input type="text" placeholder="Email Address" id="email">
+                </div>
+                <div class="login-form-input">
+                    <input type="text" placeholder="Password" id="password">
+                </div>
+                <div class="login-form-input">
+                    <span id="error"></span>
+                    <input type="button" (click)="this.tryLogin()" value="Login"/>
+                    <a id="registerLink" href="/register">Not a member? Register here.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
